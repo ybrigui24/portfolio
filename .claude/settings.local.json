@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pdftotext -layout \"Yusuf Brigui Final CV 2.pdf\" -)",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}
