@@ -10,16 +10,33 @@
       content="Yusuf Brigui — Computer Engineering student at Koç University. Systems design, software development, and low-level performance work."
     />
     <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Load font CSS asynchronously so it never blocks first paint; display=swap
+         renders text in the fallback font until the webfonts arrive. -->
     <link
-      href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap"
-      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
-      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
   </head>
   <body>
     <div id="root"></div>
