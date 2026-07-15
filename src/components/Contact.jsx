@@ -16,7 +16,7 @@ export default function Contact() {
           whileTap={{ scale: 0.97 }}
           className="mt-8 inline-block rounded-full bg-white px-8 py-3.5 font-mono text-sm font-bold text-ink transition-colors hover:bg-lilac"
         >
-          briguiyoussef2005@icloud.com
+          Email me
         </motion.a>
         <div className="mt-8 flex justify-center gap-8">
           <a
